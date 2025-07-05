@@ -1,11 +1,25 @@
 {
   "name": "@chen/ui",
-  "private": true,
+  "private": false,
+  "description": "A Vue 3 UI component library",
+  "author": "张辰 <xiaokeai1833103@gmail.com>",
   "version": "0.0.1",
   "type": "module",
   "engines": {
     "node": ">20"
   },
+  "main": "dist/chen-ui.cjs.js",
+  "module": "dist/chen-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/chen-ui.es.js",
+      "require": "./dist/chen-ui.cjs.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "vite build"
   },
