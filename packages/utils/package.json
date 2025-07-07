@@ -1,7 +1,7 @@
 {
   "name": "@funtoy/utils",
   "version": "0.0.1",
-  "private": "false",
+  "private": false,
   "description": "A common util-tools library",
   "type": "module",
   "main": "dist/funToy-utils.cjs.js",
