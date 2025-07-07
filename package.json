@@ -1,6 +1,7 @@
 {
-  "name": "chen-monorepo",
+  "name": "@funtoy/main",
   "version": "1.0.0",
+  "private": "true",
   "description": "",
   "scripts": {
     "prepare": "husky"
