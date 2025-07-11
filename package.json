@@ -17,7 +17,7 @@
     "commitizen": {
       "path": "node_modules/cz-git",
       "useEmoji": true,
-      "czConfig": "./cz.config.mjs"
+      "czConfig": "./cz.config.ts"
     }
   },
   "keywords": [],
