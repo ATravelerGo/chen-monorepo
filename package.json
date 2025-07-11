@@ -4,8 +4,7 @@
   "private": "true",
   "description": "",
   "scripts": {
-    "prepare": "husky",
-    "commit": "cz"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
@@ -13,11 +12,7 @@
       "prettier --write"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
