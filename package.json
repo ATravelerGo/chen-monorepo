@@ -4,7 +4,8 @@
   "private": "true",
   "description": "",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "cz"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
@@ -12,7 +13,12 @@
       "prettier --write"
     ]
   },
-
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "useEmoji": true
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
