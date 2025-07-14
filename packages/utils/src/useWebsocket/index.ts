@@ -5,7 +5,7 @@ export class UseWebSocket<T> {
 	private reconnectCount = 0;
 	private readonly maxReconnect = 5;
 	private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
-	private heartbeatInterval = null;
+	private heartbeatInterval: ReturnType<typeof setInterval> | null = null;
 	private isManuallyClosed: boolean = false;
 
 	constructor(url: string) {
@@ -71,7 +71,7 @@ export class UseWebSocket<T> {
 	}
 
 	private tryReconnect(callBack?: (messageBody: T) => void) {
-		clearInterval(this.heartbeatInterval);
+		clearInterval(this.heartbeatInterval as ReturnType<typeof setInterval>);
 		if (this.isManuallyClosed) return;
 
 		if (this.reconnectCount >= this.maxReconnect) {
@@ -93,7 +93,7 @@ export class UseWebSocket<T> {
 		if (this.socket) {
 			this.socket.close();
 			this.socket = null;
-			clearInterval(this.heartbeatInterval);
+			clearInterval(this.heartbeatInterval as ReturnType<typeof setInterval>);
 			this.isManuallyClosed = true;
 		}
 		this.isConnected = false;
