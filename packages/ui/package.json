@@ -3,7 +3,7 @@
   "private": false,
   "description": "A Vue 3 UI component library",
   "author": "张辰 <xiaokeai1833103@gmail.com>",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "engines": {
     "node": ">20"
@@ -13,9 +13,9 @@
   "types": "dist/types/main.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/main.d.ts",
       "import": "./dist/funToy-ui.es.js",
-      "require": "./dist/funToy-ui.cjs.js",
-      "types": "./dist/types/main.d.ts"
+      "require": "./dist/funToy-ui.cjs.js"
     }
   },
   "files": [
