@@ -16,6 +16,9 @@
       "types": "./dist/types/main.d.ts",
       "import": "./dist/funToy-ui.es.js",
       "require": "./dist/funToy-ui.cjs.js"
+    },
+    "./dist/ui.css": {
+      "default": "./dist/ui.css"
     }
   },
   "files": [
