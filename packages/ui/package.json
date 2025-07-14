@@ -10,6 +10,7 @@
   },
   "main": "dist/funToy-ui.cjs.js",
   "module": "dist/funToy-ui.es.js",
+  "types": "dist/types",
   "exports": {
     ".": {
       "import": "./dist/funToy-ui.es.js",
