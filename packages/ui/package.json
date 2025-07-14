@@ -3,7 +3,7 @@
   "private": false,
   "description": "A Vue 3 UI component library",
   "author": "张辰 <xiaokeai1833103@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "engines": {
     "node": ">20"
@@ -12,8 +12,8 @@
   "module": "dist/chen-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/chen-ui.es.js",
-      "require": "./dist/chen-ui.cjs.js"
+      "import": "./dist/funToy-ui.es.js",
+      "require": "./dist/funToy-ui.cjs.js"
     }
   },
   "files": [
