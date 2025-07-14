@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [vue()],
-	// resolve: {
+	// resolve: {  //是为了开发和调试的时候避免多副本vue导致的runtime问题
 	// 	dedupe: ['vue']
 	// },
 	build: {
@@ -15,7 +15,7 @@ export default defineConfig({
 			fileName: (format) => `funToy-ui.${format}.js`
 		},
 		rollupOptions: {
-			external: ['vue']
+			external: ['vue'] //因为加了这个 构建时也不会去解析 vue 的内容，只是保留 import { ref } from 'vue' 这行在最终产物里。
 		}
 	}
 });
