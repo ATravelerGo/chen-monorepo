@@ -8,8 +8,8 @@
   "engines": {
     "node": ">20"
   },
-  "main": "dist/chen-ui.cjs.js",
-  "module": "dist/chen-ui.es.js",
+  "main": "dist/funToy-ui.cjs.js",
+  "module": "dist/funToy-ui.es.js",
   "exports": {
     ".": {
       "import": "./dist/funToy-ui.es.js",
