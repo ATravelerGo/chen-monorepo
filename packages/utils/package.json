@@ -1,13 +1,15 @@
 {
   "name": "@funtoy/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A common util-tools library",
   "type": "module",
   "main": "dist/funToy-utils.cjs.js",
   "module": "dist/funToy-utils.es.js",
+  "types": "dist/types/main.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/main.d.ts",
       "import": "./dist/funToy-utils.es.js",
       "require": "./dist/funToy-utils.cjs.js"
     }
@@ -17,7 +19,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build && pnpm build:types",
+    "build:types": "tsc -p tsconfig.build.json"
   },
   "keywords": [
     "tools"
