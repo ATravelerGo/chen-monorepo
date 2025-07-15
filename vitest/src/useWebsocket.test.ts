@@ -6,6 +6,7 @@ let mockSocket;
 beforeEach(() => {
 	vi.useFakeTimers(); // 使用假的定时器
 	mockSocket = {
+		//实际上我们的好多判断都是基于这里来的
 		send: vi.fn(), //vi.fn() 会创建一个 空的模拟函数，这个函数本身什么都不做，但它会记录所有被调用的信息，比如调用了几次、调用时传了什么参数、返回值等等
 		close: vi.fn(),
 		readyState: 1, // OPEN 状态
